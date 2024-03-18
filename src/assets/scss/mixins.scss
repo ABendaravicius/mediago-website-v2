@@ -1,0 +1,41 @@
+@mixin main-heading {
+    font-size: 64px;
+    line-height: 78px;
+    font-weight: 700;
+    color: $gray;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@mixin sub-page-header {
+    .header {
+        padding: 36px 48px;
+        background: linear-gradient(241deg, #7837D1 25%, #C473FE 100%);
+    
+        &__text {
+            max-width: 1104px;
+            margin: auto;
+            font-size: 36px;
+            line-height: 48px;
+            text-transform: uppercase;
+            color: #FFF;
+        }
+
+        @media (max-width:1366px) {
+            padding: 20px 48px;
+
+            &__text {
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }
+
+        @media (max-width:757px) {
+            padding: 20px 24px;
+        }
+    }
+}
